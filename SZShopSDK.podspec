@@ -28,10 +28,14 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/huoji1201/SZShopSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'SZShopSDK/Classes/**/*'
+  s.ios.deployment_target = '9.0'
   
+  s.vendored_framework = "SZShopSDK/Products/*.{framework}"
+
+  #s.source_files = 'SZShopSDK/Classes/*.{h,m}'
+
+  s.resource = 'SZShopSDK/Assets/SZSource.bundle'  
+
   # s.resource_bundles = {
   #   'SZShopSDK' => ['SZShopSDK/Assets/*.png']
   # }
