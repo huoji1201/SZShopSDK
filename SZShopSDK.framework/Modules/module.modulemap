@@ -1,6 +1,0 @@
-framework module SZShopSDK {
-  umbrella header "SZShopSDK.h"
-
-  export *
-  module * { export * }
-}
